@@ -1,7 +1,5 @@
-Category: All categories
-
-Country,PS5: (10/18/21 - 10/18/22)
-St. Pierre & Miquelon,100
+Country,Searches
+Saint Pierre & Miquelon,100
 United Kingdom,70
 Hong Kong,61
 Greenland,59
@@ -18,7 +16,7 @@ Guam,50
 Jersey,48
 Macao,48
 Japan,48
-United States,47
+United States of America,47
 Canada,47
 Austria,46
 New Zealand,45
@@ -74,7 +72,7 @@ St. Barthélemy,25
 St. Kitts & Nevis,25
 Barbados,24
 Qatar,24
-Congo - Brazzaville,23
+Congo,23
 Singapore,23
 Aruba,22
 Curaçao,22
@@ -107,7 +105,7 @@ Vanuatu,15
 Mali,15
 Côte d’Ivoire,15
 Senegal,15
-Israel,15
+Palestine,15
 Costa Rica,15
 Malaysia,15
 Suriname,14
@@ -146,7 +144,7 @@ Chad,10
 Angola,10
 Russia,10
 Cuba,10
-Congo - Kinshasa,10
+Dem. Rep. Congo,10
 Mexico,10
 Mozambique,10
 Liberia,10
@@ -187,7 +185,6 @@ Tanzania,7
 Western Sahara,6
 Belarus,6
 Moldova,6
-Palestine,6
 Colombia,6
 Cape Verde,6
 Ecuador,6
@@ -243,9 +240,9 @@ Nauru,
 Pitcairn Islands,
 Palau,
 North Korea,
-South Georgia & South Sandwich Islands,
+South Georgia and South Sandwich Islands,
 Solomon Islands,
-São Tomé & Príncipe,
+São Tomé and Príncipe,
 Tokelau,
 Tuvalu,
 U.S. Outlying Islands,
