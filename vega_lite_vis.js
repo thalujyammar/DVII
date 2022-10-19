@@ -22,3 +22,34 @@ vegaEmbed("#dv4", vg_4).then(function(result) {
     ("https://vega.github.io/vega/docs/api/view/")
 
 }).catch(console.error);
+
+
+
+$('#vis').on('change', function () {
+    if(this.value === "ps5"){
+        $("#dv1").show();
+        $("#dv2").hide();
+        $("#dv3").hide();
+        $("#dv4").hide();
+    } else if(this.value === "xbox"){
+        $("#dv1").hide();
+        $("#dv2").show();
+        $("#dv2").hide();
+        $("#dv2").hide();
+    } else if(this.value === "nin"){
+        $("#dv1").hide();
+        $("#dv2").hide();
+        $("#dv2").show();
+        $("#dv2").hide();
+    }else if(this.value === "steam"){
+        $("#dv1").hide();
+        $("#dv2").hide();
+        $("#dv2").hide();
+        $("#dv2").show();
+    }else {
+        $("#dv1").show();
+        $("#dv2").hide();
+        $("#dv3").hide();
+        $("#dv4").hide();
+    }
+});
