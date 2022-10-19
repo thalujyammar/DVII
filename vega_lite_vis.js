@@ -46,10 +46,5 @@ $('#vis').on('change', function () {
         $("#dv2").hide();
         $("#dv2").hide();
         $("#dv2").show();
-    }else {
-        $("#dv1").show();
-        $("#dv2").hide();
-        $("#dv3").hide();
-        $("#dv4").hide();
     }
 });
