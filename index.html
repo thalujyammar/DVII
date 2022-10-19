@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-<script src="vega_lite_vis.js"></script>
-<title>First vega-lite graph </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+  <script src="vega_lite_vis.js"></script>
+  <title>Console Entertainment </title>
 </head>
 <body>
+  <label for="vis">Filter by console:</label>
+    <select name="vis" id="vis">
+      <option value="Ps5">ps5</option>
+      <option value="Xbox">xbox</option>
+      <option value="Nintendo Switch">nin</option>
+      <option value="Steam Deck">steam</option>
+    </select>
 <h1>Console Users by country</h1>
 <div id="dv1">
 </div>
