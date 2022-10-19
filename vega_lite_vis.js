@@ -26,22 +26,22 @@ vegaEmbed("#dv4", vg_4).then(function(result) {
 
 
 $('#vis').on('change', function () {
-    if(this.value === "ps5"){
+    if(this.value === "0"){
         $("#dv1").show();
         $("#dv2").hide();
         $("#dv3").hide();
         $("#dv4").hide();
-    } else if(this.value === "xbox"){
+    } else if(this.value === "1"){
         $("#dv1").hide();
         $("#dv2").show();
         $("#dv2").hide();
         $("#dv2").hide();
-    } else if(this.value === "nin"){
+    } else if(this.value === "2"){
         $("#dv1").hide();
         $("#dv2").hide();
         $("#dv2").show();
         $("#dv2").hide();
-    }else if(this.value === "steam"){
+    }else if(this.value === "3"){
         $("#dv1").hide();
         $("#dv2").hide();
         $("#dv2").hide();
