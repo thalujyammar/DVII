@@ -9,12 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
     <script src="vega_lite_vis.js"></script>
     <title>Console Entertainment </title>
-    <style>
-      #dv1{display:none;}
-      #dv2{display:none;}
-      #dv3{display:none;}
-      #dv4{display:none;}
-    </style>
   </head>
  <body>
     <h1>Console Users by country</h1>
@@ -23,20 +17,20 @@
     <div id = "sel">
       <label for="vis">Filter by console:</label>
         <select name="vis" id="vis">
-          <option value="ps5">PS5</option>
-          <option value="xbox">Xbox</option>
-          <option value="nin">Nintendo Switch</option>
-          <option value="steam">Steam Deck</option>
+          <option value="0">PS5</option>
+          <option value="1">Xbox</option>
+          <option value="2">Nintendo Switch</option>
+          <option value="3">Steam Deck</option>
         </select>
    </div>
     <br>
-    <div id="dv1">
+    <div style=”display: none;” id="dv1">
     </div>
-    <div id="dv2">
+    <div style=”display: none;” id="dv2">
     </div>
-    <div id="dv3">
+    <div style=”display: none;” id="dv3">
     </div>
-    <div id="dv4">
+    <div style=”display: none;” id="dv4">
     </div>
   </body>
 </html>
