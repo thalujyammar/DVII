@@ -16,6 +16,17 @@
             integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
             crossorigin="anonymous">
     </script>
+    <style>
+      body {
+        background-image: url('https://images.unsplash.com/photo-1581810476461-bcffde6c6904?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80');
+        color: #FFFFFF;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      
+    </style>
   </head>
  <body>
     <h1>Console Users by country</h1>
@@ -31,48 +42,48 @@
         </select>
    </div>
     <br>
-    <div id="dv1">
+    <div class="divstyle" id="dv1">
 
     </div>
     
-    <div style="display: none"; id="dv2">
+    <div class="divstyle" style="display: none"; id="dv2">
   
     </div>
     
-    <div style="display: none"; id="dv3">
+    <div class="divstyle" style="display: none"; id="dv3">
 
     </div>
     
     
-    <div style="display: none"; id="dv4">
+    <div class="divstyle" style="display: none"; id="dv4">
 
     </div>
     
     <script>
       $('#vis').change(function () {
-        var res = $(this).val();
-        if(res == "1"){
-          $("#dv1").show();
-          $("#dv2").hide();
-          $("#dv3").hide();
-          $("#dv4").hide();
-        } else if(res == "2"){
-          $("#dv1").hide();
-          $("#dv2").show();
-          $("#dv3").hide();
-          $("#dv4").hide();
-        } else if(res == "3"){
-          $("#dv1").hide();
-          $("#dv2").hide();
-          $("#dv3").show();
-          $("#dv4").hide();
-        }else if(res == "4"){
-          $("#dv1").hide();
-          $("#dv2").hide();
-          $("#dv3").hide();
-          $("#dv4").show();
-        }
-      });
+      var res = $(this).val();
+      if(res == "1"){
+        $("#dv1").show();
+        $("#dv2").hide();
+        $("#dv3").hide();
+        $("#dv4").hide();
+      } else if(res == "2"){
+        $("#dv1").hide();
+        $("#dv2").show();
+        $("#dv3").hide();
+        $("#dv4").hide();
+      } else if(res == "3"){
+        $("#dv1").hide();
+        $("#dv2").hide();
+        $("#dv3").show();
+        $("#dv4").hide();
+      }else if(res == "4"){
+        $("#dv1").hide();
+        $("#dv2").hide();
+        $("#dv3").hide();
+        $("#dv4").show();
+      }
+    });
       </script>
 
 
