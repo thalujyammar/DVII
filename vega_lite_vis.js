@@ -25,8 +25,8 @@ vegaEmbed("#dv4", vg_4).then(function(result) {
 
 
 
-$('.vis').on('change', function () {
-    var res = $(this).val()
+$('.vis').change(function () {
+    var res = $(this).val();
     if(res == "0"){
         $(".dv1").show();
         $(".dv2").hide();
