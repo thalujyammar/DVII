@@ -22,4 +22,3 @@ vegaEmbed("#dv4", vg_4).then(function(result) {
     ("https://vega.github.io/vega/docs/api/view/")
 
 }).catch(console.error);
-
