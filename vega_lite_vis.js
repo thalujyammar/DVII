@@ -25,26 +25,27 @@ vegaEmbed("#dv4", vg_4).then(function(result) {
 
 
 
-$('#vis').on('change', function () {
-    if(this.value === "0"){
-        $("#dv1").show();
-        $("#dv2").hide();
-        $("#dv3").hide();
-        $("#dv4").hide();
-    } else if(this.value === "1"){
-        $("#dv1").hide();
-        $("#dv2").show();
-        $("#dv3").hide();
-        $("#dv4").hide();
-    } else if(this.value === "2"){
-        $("#dv1").hide();
-        $("#dv2").hide();
-        $("#dv3").show();
-        $("#dv4").hide();
-    }else if(this.value === "3"){
-        $("#dv1").hide();
-        $("#dv2").hide();
-        $("#dv3").hide();
-        $("#dv4").show();
+$('.vis').on('change', function () {
+    var res = $(this).val()
+    if(res == "0"){
+        $(".dv1").show();
+        $(".dv2").hide();
+        $(".dv3").hide();
+        $(".dv4").hide();
+    } else if(res == "1"){
+        $(".dv1").hide();
+        $(".dv2").show();
+        $(".dv3").hide();
+        $(".dv4").hide();
+    } else if(res == "2"){
+        $(".dv1").hide();
+        $(".dv2").hide();
+        $(".dv3").show();
+        $(".dv4").hide();
+    }else if(res == "3"){
+        $(".dv1").hide();
+        $(".dv2").hide();
+        $(".dv3").hide();
+        $(".dv4").show();
     }
 });
