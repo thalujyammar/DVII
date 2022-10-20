@@ -3,11 +3,72 @@
   "title": "PS5 Searches",
   "width": 800,
   "height": 400,
-  "projection": {"type": "equalEarth"},
+  "projection": {
+    "type": "equalEarth",
+    "center": {"expr": "centre_to"},
+    "scale": {"expr": "zoom_level"}
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
+
+
+
+
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 150,
+      "bind": {
+        "input": "range",
+        "min": 100,
+        "max": 800,
+        "step": 5,
+        "name": "Zoom"
+      }
+    },
+    {
+      "name": "centre_to",
+      "value": [0, 0],
+      "bind": {
+        "input": "select",
+        "options": [
+          [0, 0],
+          [0, 50],
+          [20, 50],
+          [106, 38],
+          [100, 15],
+          [-100, 50],
+          [-70, -20],
+          [140, -20],
+          [26, 32],
+          [6, 20],
+          [30, -15]
+        ],
+        "labels": [
+          "Reset Centre",
+          "Western Europe",
+          "Eastern Europe",
+          "East Asia",
+          "South East Asia",
+          "North America",
+          "South America",
+          "Oceania",
+          "North Africa & Middle East",
+          "West Africa",
+          "Central & South Africa"
+        ],
+        "name": "Map Centre"
+      }
+    }
+  ],
+
+
+
+
+
+
   "layer":[
     {
       "transform": [
