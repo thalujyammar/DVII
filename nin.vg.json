@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Nin Searches",
+  "title": "Nintendo Switch",
   "width": 800,
   "height": 400,
   "projection": {"type": "equalEarth"},
@@ -46,7 +46,7 @@
       "type": "quantitative",
       "scale": {
             "type": "threshold",
-            "domain": [10,20,30],
+            "domain": [5,15,25],
             "range": ["#fee5d9","#fcae91","#fb6a4a","#cb181d"]
           }
     },
