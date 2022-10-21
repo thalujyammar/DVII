@@ -14,12 +14,6 @@
   },
 
 
-
-
-
-
-
-
   "params": [
     {
       "name": "zoom_level",
@@ -71,13 +65,6 @@
 
 
 
-
-
-
-
-
-
-
   "layer":[
     {
       "transform": [
@@ -109,7 +96,7 @@
     },
     {"calculate": "datum.Searches", "as": "Searches"}
   ],
-  "mark": {"type": "geoshape","stroke":"black", "strokeWidth": 0.2},
+  "mark": {"type": "geoshape","stroke":"darkred","strokeWidth": 0.2},
   "encoding": {
     "color": {
       "field": "Searches",
