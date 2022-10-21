@@ -1,0 +1,106 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1581810476461-bcffde6c6904?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80');
+    color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family:'Helvetica';
+  }
+
+
+.intro1 {
+    width: 60%;
+    background-image: linear-gradient(to left, #9459cb 10%, #f1138d);
+    margin: auto;
+    margin-bottom: 1%;
+    padding: 10px;
+    text-align: center;
+  }
+
+.intro1 .head1 {
+    text-align: center;
+
+    font-size: 25px;
+    font-weight: 600;
+    font-family:'Helvetica';
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    border: 8px solid #d6c9ef;
+    background-color: #FFFFFF;
+    opacity: 0.80;
+
+    border-radius: 2%;
+
+    }
+
+.mainstyle {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5%;
+    text-align: center;
+    }
+
+.par{
+    max-width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5%;
+    text-align: center;
+    text-align: justify;
+    -webkit-text-stroke: 0.5px black;
+    }
+
+.selstyle {
+    position: relative;
+    display: block;
+    max-width: 800px;
+    min-width: 180px;
+    margin: 0 auto;
+    border: 1px solid #f0f0f0;
+    background-color: #a53ca5;
+    z-index: 10;
+  }
+.selstyle select {
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 12px 55px 10px 5px;
+    font-size: 15px;
+    color: #d6c9ef;
+    }
+
+.selstyle:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    line-height: 30px;
+    content: "∨";
+    text-align: center;
+    color: #d6c9ef;
+    font-size: 30px;
+    border-left: 1px solid #882b8d;
+    z-index: -1;
+    }
+
+.mapwrap{
+    border-style: solid;
+    border-color: #f1138d;
+    padding-top: 10;
+    }
+
+
+
+
+
+
