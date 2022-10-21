@@ -5,57 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Console Entertainment </title>
+
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
     <script src="vega_lite_vis.js"></script>
-    
     
     <script src="<a href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" target="_blank" rel="noreferrer noopener">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js</a>" </script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
             integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
             crossorigin="anonymous">
     </script>
-    <style>
-      body {
-        background-image: url('https://images.unsplash.com/photo-1581810476461-bcffde6c6904?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80');
-        color: #FFFFFF;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-      }
-      
-    </style>
+
+    <link rel="stylesheet" href="stylings.css">
+
   </head>
  <body>
-    <h1>Console Users by country</h1>
+  <header>
+  </header>
+  <br>
+  <br>
+  <div class="mainstyle">
+
+    <div class="intro1">
+      <div class = "head1">
+        <h1>Console Users by country</h1>
+      </div>
+    </div>
+
+    <img style="width:400px;height:266px;" src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80">
     <br>
-  
+    <br>
+
+    <div class="par">
+      <span style="font-size: 150%;"> With adding PS5 and XBOX exclusives onto the Steam platform for PC players, 
+        I have designed these visualisations showing how these consoles and their games have shaped the entertainment industry. 
+        I have analysed data regarding popularity of consoles, game ratings, and hardware performance. 
+
+      </span>
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="mapwrap">
+
      <div id = "sel">
-      <label for="vis">Filter by console:</label>
-        <select name="vis" id="vis">
+      <label class="selstyle" for="vis">
+        <select name="options" id="vis">
+          <option value = "">
+            Filter by console
+          </option>
           <option value="1">Xbox</option>
           <option value="2">PS5</option>
           <option value="3">Nintendo Switch</option>
           <option value="4">Steam Deck</option>
-        </select>
+        </select></label>
+
    </div>
     <br>
-    <div class="divstyle" id="dv1">
+    <div class="mapstyle" id="dv1">
 
     </div>
     
-    <div class="divstyle" style="display: none"; id="dv2">
+    <div class="mapstyle" style="display: none"; id="dv2">
   
     </div>
     
-    <div class="divstyle" style="display: none"; id="dv3">
+    <div class="mapstyle" style="display: none"; id="dv3">
 
     </div>
     
     
-    <div class="divstyle" style="display: none"; id="dv4">
+    <div class="mapstyle" style="display: none"; id="dv4">
 
     </div>
     
@@ -86,8 +111,6 @@
     });
       </script>
 
-
-
-  
+  </div>
   </body>
 </html>
