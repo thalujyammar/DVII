@@ -13,9 +13,6 @@
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
 
-
-
-
   "params": [
     {
       "name": "zoom_level",
@@ -65,10 +62,6 @@
   ],
 
 
-
-
-
-
   "layer":[
     {
       "transform": [
@@ -100,15 +93,15 @@
     },
     {"calculate": "datum.Searches", "as": "Searches"}
   ],
-  "mark": {"type": "geoshape","stroke":"black", "strokeWidth": 0.2},
+  "mark": {"type": "geoshape","stroke":"darkcyan", "strokeWidth": 0.2},
   "encoding": {
     "color": {
       "field": "Searches",
       "type": "quantitative",
       "scale": {
             "type": "threshold",
-            "domain": [12,24,36],
-            "range": ["#86b5d9","#b2e2e2","#286bad","#0c0663"]
+            "domain": [10,25,40],
+            "range": ["#a2c8fa","#4e66b5","#2632bd","#0c0663"]
           }
     },
     "tooltip": [
