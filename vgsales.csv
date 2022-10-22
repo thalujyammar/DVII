@@ -5,12 +5,12 @@ Mario Kart Wii,Wii,2008,Racing,35.82
 Wii Sports Resort,Wii,2009,Sports,33
 Pokemon Red/Pokemon Blue,Game Boy,1996,Role-Playing,31.37
 Tetris,Game Boy,1989,Puzzle,30.26
-New Super Mario Bros.,DS,2006,Platform,30.01
+New Super Mario Bros.,Other,2006,Platform,30.01
 Wii Play,Wii,2006,Misc,29.02
 New Super Mario Bros. Wii,Wii,2009,Platform,28.62
 Duck Hunt,Nintendo,1984,Shooter,28.31
-Nintendogs,DS,2005,Simulation,24.76
-Mario Kart DS,DS,2005,Racing,23.42
+Nintendogs,Other,2005,Simulation,24.76
+Mario Kart DS,Other,2005,Racing,23.42
 Pokemon Gold/Pokemon Silver,Game Boy,1999,Role-Playing,23.1
 Wii Fit,Wii,2007,Sports,22.72
 Wii Fit Plus,Wii,2009,Sports,22
@@ -18,15 +18,15 @@ Kinect Adventures!,Xbox,2010,Misc,21.82
 Grand Theft Auto V,Play Station,2013,Action,21.4
 Grand Theft Auto: San Andreas,Play Station,2004,Action,20.81
 Super Mario World,Other,1990,Platform,20.61
-Brain Age: Train Your Brain in Minutes a Day,DS,2005,Misc,20.22
-Pokemon Diamond/Pokemon Pearl,DS,2006,Role-Playing,18.36
+Brain Age: Train Your Brain in Minutes a Day,Other,2005,Misc,20.22
+Pokemon Diamond/Pokemon Pearl,Other,2006,Role-Playing,18.36
 Super Mario Land,Game Boy,1989,Platform,18.14
 Super Mario Bros. 3,Nintendo,1988,Platform,17.28
 Grand Theft Auto V,Xbox,2013,Action,16.38
 Grand Theft Auto: Vice City,Play Station,2002,Action,16.15
 Pokemon Ruby/Pokemon Sapphire,Game Boy,2002,Role-Playing,15.85
-Pokemon Black/Pokemon White,DS,2010,Role-Playing,15.32
-Brain Age 2: More Training in Minutes a Day,DS,2005,Puzzle,15.3
+Pokemon Black/Pokemon White,Other,2010,Role-Playing,15.32
+Brain Age 2: More Training in Minutes a Day,Other,2005,Puzzle,15.3
 Gran Turismo 3: A-Spec,Play Station,2001,Racing,14.98
 Call of Duty: Modern Warfare 3,Xbox,2011,Shooter,14.76
 Pokemon Yellow: Special Pikachu Edition,Game Boy,1998,Role-Playing,14.64
@@ -40,11 +40,11 @@ Call of Duty: Modern Warfare 3,Play Station,2011,Shooter,13.46
 Grand Theft Auto III,Play Station,2001,Action,13.1
 Super Smash Bros. Brawl,Wii,2008,Fighting,13.04
 Call of Duty: Black Ops,Play Station,2010,Shooter,12.73
-Animal Crossing: Wild World,DS,2005,Simulation,12.27
+Animal Crossing: Wild World,Other,2005,Simulation,12.27
 Mario Kart 7,Other,2011,Racing,12.21
 Halo 3,Xbox,2007,Shooter,12.14
 Grand Theft Auto V,Play Station,2014,Action,11.98
-Super Mario 64,DS,2009,Action,11.9
+Super Mario 64,Other,2009,Action,11.9
 Gran Turismo 4,Nintendo,1996,Platform,11.89
 Super Mario Galaxy,Play Station,2004,Racing,11.66
 Pokemon Omega Ruby/Pokemon Alpha Sapphire,Wii,2007,Platform,11.52
@@ -73,21 +73,21 @@ Donkey Kong Country,Xbox,2007,Shooter,9.32
 Minecraft,Other,1994,Platform,9.3
 Animal Crossing: New Leaf,Xbox,2013,Misc,9.2
 Mario Party DS,Other,2012,Simulation,9.09
-The Elder Scrolls V: Skyrim,DS,2007,Misc,9.02
+The Elder Scrolls V: Skyrim,Other,2007,Misc,9.02
 Super Mario Kart,Xbox,2011,Role-Playing,8.84
 FIFA 16,Other,1992,Racing,8.76
 Wii Party,Play Station,2015,Sports,8.49
 Halo 2,Wii,2010,Misc,8.49
 Mario Party 8,Other,2004,Shooter,8.49
 Pokemon Black 2/Pokemon White 2,Wii,2007,Misc,8.42
-FIFA Soccer 13,DS,2012,Role-Playing,8.33
+FIFA Soccer 13,Other,2012,Role-Playing,8.33
 The Sims 3,Play Station,2012,Action,8.24
 GoldenEye 007,PC,2009,Simulation,8.11
 Mario & Sonic at the Olympic Games,Nintendo,1997,Shooter,8.09
 Final Fantasy X,Wii,2007,Sports,8.06
 Final Fantasy VIII,Play Station,2001,Role-Playing,8.05
 Pok√©mon Platinum Version,Play Station,1999,Role-Playing,7.86
-Pac-Man,DS,2008,Role-Playing,7.84
+Pac-Man,Other,2008,Role-Playing,7.84
 Grand Theft Auto: Liberty City Stories,Other,1982,Puzzle,7.81
 Super Mario Galaxy 2,Other,2005,Action,7.72
 Star Wars Battlefront (2015),Wii,2010,Platform,7.69
@@ -121,7 +121,7 @@ Uncharted 2: Among Thieves,Xbox,2008,Shooter,6.76
 Call of Duty 4: Modern Warfare,Play Station,2009,Action,6.73
 FIFA 12,Play Station,2007,Shooter,6.72
 Big Brain Academy,Play Station,2011,Sports,6.69
-Red Dead Redemption,DS,2005,Misc,6.67
+Red Dead Redemption,Other,2005,Misc,6.67
 FIFA 15,Play Station,2010,Action,6.6
 Donkey Kong Country Returns,Play Station,2014,Sports,6.59
 The Elder Scrolls V: Skyrim,Wii,2010,Platform,6.59
