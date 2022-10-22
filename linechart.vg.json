@@ -1,36 +1,44 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "https://raw.githubusercontent.com/thalujyammar/DVII/main/multiTimeline.csv"},
-    "width": 400,
-    "height": 300,
-    "encoding": {"x": {"field": "Year", "type": "temporal"}},
-    "layer": [
-      {
-        "encoding": {
-          "color": {"field": "Console", "type": "nominal"},
-          "y": {"field": "Popularity", "type": "quantitative"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/thalujyammar/DVII/main/multiTimeline.csv"
+  },
+  "width": 700,
+  "height": 500,
+  "encoding": {"x": {"field": "Year", "type": "temporal"}},
+  "layer": [
+    {
+      "encoding": {
+        "color": {"field": "Console", "type": "nominal"},
+        "y": {"field": "Popularity", "type": "quantitative"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {"pivot": "Console", "value": "Popularity", "groupby": ["Year"]}
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
         },
-        "layer": [
-          {"mark": "line"},
-          {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+        "tooltip": [
+          {"field": "GameBoy", "type": "quantitative"},
+          {"field": "PSP", "type": "quantitative"},
+          {"field": "WiiU", "type": "quantitative"},
+          {"field": "Xbox360", "type": "quantitative"}
         ]
       },
-      {
-        "transform": [{"pivot": "Console", "value": "Popularity", "groupby": ["Year"]}],
-        "mark": "rule",
-        "encoding": {
-          "opacity": {
-            "condition": {"value": 0.3, "param": "hover", "empty": false},
-            "value": 0
-          },
-          "tooltip": [
-            {"field": "GameBoy", "type": "quantitative"},
-            {"field": "PSP", "type": "quantitative"},
-            {"field": "WiiU", "type": "quantitative"},
-            {"field": "Xbox360", "type": "quantitative"}
-          ]
-        },
-        "params": [{
+      "params": [
+        {
           "name": "hover",
           "select": {
             "type": "point",
@@ -39,8 +47,8 @@
             "on": "mouseover",
             "clear": "mouseout"
           }
-        }]
-      }
-    ]
-  }
-  
+        }
+      ]
+    }
+  ]
+}
