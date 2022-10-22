@@ -1,0 +1,84 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {"text": "Do newer titles sell more than legacies?", "fontSize": 20},
+    "data": {
+      "url": "https://raw.githubusercontent.com/thalujyammar/DVII/main/vgsales.csv"
+    },
+    "vconcat": [
+      {
+        "encoding": {
+          "color": {
+            "condition": {
+              "param": "brush",
+              "title": "Position",
+              "field": "Platform",
+              "type": "nominal",
+              "scale": {
+                "domain": ["Play Station", "Xbox", "Wii", "Nintendo","PC","Game Boy","Game Cube", "Other"],
+                "range": ["#e41a1c","#377eb8", "#4daf4a", "#984ea3", "#ff7f00", "#098694", "#a65628","#000000"]
+              }
+            },
+            "value": "lightgray"
+          },
+          
+          "y": {
+            "field": "Global_Sales",
+            
+            "title": "Copies Sold (millions)",
+            "type": "quantitative",
+            "axis": {"labelFontSize": 11, "titleFontSize": 15}
+          },
+          "x": {
+            "title": "Year of Release",
+            "field": "Year",
+            "type": "temporal",
+            "axis": {"labelFontSize": 11, "titleFontSize": 15}
+          },
+          "tooltip": [
+            {"field": "Name", "type": "nominal", "title": "Name"},
+            {"field": "Global_Sales", "type": "quantitative", "title": "Million copies sold"},
+            {"field": "Genre", "type": "nominal", "title": "Genre"},
+            {"field": "Platform", "type": "nominal", "title": "Console"}
+          ]
+        },
+        "width": 500,
+        "height": 300,
+        "mark": "point",
+        "params": [
+          {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
+        ],
+        "transform": [{"filter": {"param": "click"}}]
+      },
+      {
+        "encoding": {
+          "color": {
+            "condition": {
+              "param": "click",
+              "field": "Platform",
+              "scale": {
+                "domain": ["Play Station", "Xbox", "Wii", "Nintendo","PC","Game Boy","Game Cube", "Other"],
+                "range": ["#e41a1c","#377eb8", "#4daf4a", "#984ea3", "#ff7f00", "#098694", "#a65628","#000000"]
+              }
+            },
+            "value": "lightgray"
+          },
+          "x": {
+            "aggregate": "count",
+            "title": "Number of Titles With Over 100k Sold Copies",
+            "axis": {"labelFontSize": 11, "titleFontSize": 15}
+          },
+          "y": {
+            "title": "Platform",
+            "field": "Platform",
+            "axis": {"labelFontSize": 11, "titleFontSize": 15}
+          }
+        },
+        "width": 500,
+        "mark": "bar",
+        "params": [
+          {"name": "click", "select": {"type": "point", "encodings": ["color"]}}
+        ],
+        "transform": [{"filter": {"param": "brush"}}]
+      }
+    ]
+  }

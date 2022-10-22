@@ -1,0 +1,63 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Top Rated Games of 2021",
+      "fontSize": 30,
+      "align": "center",
+      "dy": -10
+    },
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/thalujyammar/DVII/main/lollipop.csv"
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "height": 20,
+          "binSpacing": 0,
+          "color": "#553beb",
+          "stroke": "white",
+          "clip": true
+        }
+      },
+      {"mark": {"type": "circle", "size": 800, "xOffset": 10, "color":"#670467"}},
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "xOffset": 18,
+          "aria": false,
+          "fontSize": 15,
+          "fontWeight": "bold",
+          "color": "white"
+        },
+        "encoding": {"text": {"field": "Rating", "type": "quantitative"}}
+      }
+    ],
+    "transform": [
+      {"calculate": "split(datum.Name, '+')", "as": "Name"}
+    ],
+    
+    "encoding": {
+      "x": {
+        "field": "Rating", 
+        "type": "quantitative", 
+        "axis": null,
+        "scale":{"domain": [86,94]}
+      },
+      "y": {
+        "field": "Name",
+        "type": "nominal",
+        "sort": {"field": "Rating", "op": "min", "order": "descending"},
+        "title": "Game",
+        "axis": {"labelFontSize": 15, "titleFontSize": 20}
+        
+      },
+      "tooltip": [
+        {"field": "Rating", "type": "quantitative", "title": "Open Critic Rating"},
+        {"field": "Platform", "type": "nominal", "title": "Platforms"}
+      ]
+    }
+  }
